@@ -4,7 +4,8 @@
   "description": "",
   "keywords": [],
   "scripts": {
-    "start": "webpack-dev-server  --config webpack.dev.js",
+    
+    "start": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"
   },
   "author": "Roopesh",
