@@ -1,14 +1,21 @@
 const path = require("path");
 const common = require("./webpack.common");
 const { merge } = require("webpack-merge");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = merge(common, {
   mode: "development",
+  watch: true,
   output: {
     filename: "[name].[contenthash].js",
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "dev"),
   },
-  devtool: 'inline-source-map',
+  watchOptions: {
+    ignored: /node_modules/,
+  },
+  // plugins: [
+  //   new CleanWebpackPlugin(),
+  // ],
   module: {
     rules: [
       {

@@ -117,6 +117,7 @@ h1 {
   justify-content: space-around;
   align-items: flex-start;
   margin-bottom: 20px;
+  margin-top: 20px;
   flex-wrap: nowrap;
 }
 
@@ -124,35 +125,51 @@ h2 {
   margin-bottom: 20px;
 }
 
-h3 {
+h5 {
   margin-bottom: 30px;
 }
 
 .set {
-  padding: 10px;
-  margin: 20px;
-  margin-top: 30px;
-  text-align: left;
+  padding: 25px;
   width: 40%;
   min-width: 300px;
+  box-shadow: 
+    0 3px 10px 0 #eaeaea,
+    0 9px 15px 0 #eaeaea;
+  text-align: left;
+}
+
+.set h5 {
+  text-align: center;
 }
 
 .field {
-  margin: 10px 10px;
+  margin: 10px;
+  padding: 10px;
 }
 
 .indicator img {
   margin-right: 10px;
 }
 
-.div-dyn::after {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: .5px;
-  background-color: #888;
-  top: 0;
-  left: 50%;
+.btn,
+.btn:hover,
+.btn:focus {
+  color: #fff;
+}
+
+.no-decor {
+  text-decoration: none;
+  color: white;
+}
+
+.no-decor:hover {
+  text-decoration: none;
+  color: white;
+}
+
+#ourAddress a {
+  text-decoration: none;
 }
 
 @media (min-width: 860px) {
@@ -163,13 +180,15 @@ h3 {
 
 @media (max-width: 680px) {
   .div-dyn {
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
   }
   .set {
     width: 80%;
   }
-  .div-dyn::after {
-    display: none;
+
+  .set:first-child {
+    margin-top: 20px;
   }
 }
