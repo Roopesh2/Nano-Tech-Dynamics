@@ -72,6 +72,42 @@
       </div>
     </div>
     <div class="column div" id="faculties"></div>
-    <div class="column div" id="contact"></div>
+    <div class="column div" id="contact">
+      <h2>Contact Us</h2>
+      <div class="div-dyn width-100">
+        <div class="div-dyn-el set" id="ourAddress">
+          <h3>Our Address</h3>
+          <div class="mb-3 field">
+            <span class="indicator">
+              <img src="assets/call.svg">Phone:
+            </span>
+            <span class="value">1234567890</span>
+          </div>
+          <div class="mb-3 field">
+            <span class="indicator"><img src="assets/mail.svg">Email: </span>
+            <span class="value">example@site.domain</span>
+          </div>
+        </div>
+        <div class="div-dyn-el set" id="sendAMessage">
+          <h3>Send A message</h3>
+          <div class="mb-3 field">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" name="name" id="name" aria-describedby="NameHelp" placeholder="Your name" />
+            <small id="NameHelp" class="form-text text-muted visually-hidden">Help text</small>
+          </div>
+          <div class="mb-3 field">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="your email" />
+            <small id="emailHelp" class="form-text text-muted visually-hidden">Help text</small>
+          </div>
+          <div class="mb-3 field">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" name="message" id="message" aria-describedby="messageHelp" placeholder="Your Message" cols="20" rows="5"></textarea>
+            <small id="messageHelp" class="form-text text-muted visually-hidden">Help text</small>
+          </div>
+          <button class="action-main field">Send</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

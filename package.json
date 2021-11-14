@@ -4,7 +4,6 @@
   "description": "",
   "keywords": [],
   "scripts": {
-    
     "start": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"
   },
@@ -28,6 +27,7 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
+    "bootstrap-icons": "^1.7.0",
     "clean-webpack-plugin": "^4.0.0"
   }
 }
