@@ -1,5 +1,6 @@
-@import "./bs.scss";
-
+:root {
+  --primary: #0D6EFD;
+}
 body,
 html {
   height: 100%;
@@ -18,7 +19,7 @@ html {
   position: relative;
   width: 100%;
   height: 100%;
-  color: $white;
+  color: #ffffff;
 }
 
 #short::before {
@@ -53,11 +54,11 @@ h1 {
 }
 
 .action-main {
-  background-color: $primary;
+  background-color: var(--primary);
   border: 0;
   padding: 8px;
   border-radius: 5px;
-  color: $white;
+  color: #ffffff;
 }
 
 .carousel {

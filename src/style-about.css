@@ -1,0 +1,73 @@
+body, html {
+  width: 100%;
+}
+
+.div {
+  margin-top: 4%;
+  width: 100%;
+}
+
+.div > .heading {
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+section {
+  font-size: 1.1em;
+  font-family: serif;
+  line-height: 1.4em;
+}
+
+.main {
+  padding: 0 100px;
+  margin-top: 40px;
+}
+
+.major {
+  padding: 0 95px;
+}
+
+h3, h4 {
+  font-family: "Varela Round", sans-serif;
+}
+h1 {
+  display: inline-block;
+  line-height: 1;
+  border-bottom: 4px solid orangered;
+  padding-bottom: 3px;
+}
+
+h3 {
+  margin: 0 0 20px -5px;
+}
+
+h4 {
+  margin: 0 0 15px 0;
+}
+
+ol  {
+  margin-top: 20px;
+}
+
+.subsection {
+  margin: 30px 10px;
+}
+
+
+@media (max-width: 900px) {
+  .div {
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 700px) {
+  .div {
+    margin-top: 7%;
+  }
+}
+
+@media (max-width: 400px) {
+  .div {
+    margin-top: 9%;
+  }
+}
