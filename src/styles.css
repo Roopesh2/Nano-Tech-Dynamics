@@ -1,5 +1,42 @@
+.underline {
+  display: inline-block;
+  line-height: 1;
+  border-bottom: 4px solid orangered;
+  padding-bottom: 3px;
+}
+
+h2 {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 500;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+h2[class="underline"] {
+  margin-bottom: 45px;
+}
+
+.showcase {
+  width: 90%;
+  overflow: scroll;
+}
+
+.card {
+  margin: 25px;
+}
+
+.card-body {
+  padding: 30px;
+  min-height: 400px;
+  min-width: 400px;
+}
+
+.card-title {
+  margin-top: 20px;
+}
+
 :root {
-  --primary: #0D6EFD;
+  --primary: #0d6efd;
 }
 body,
 html {
@@ -12,7 +49,7 @@ html {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 #short {
@@ -42,7 +79,8 @@ h1 {
 }
 
 .navbar-brand {
-  font-size: 1.4em;
+  font-size: 1.7em;
+  margin-left: 15px;
 }
 
 #products {
@@ -61,46 +99,6 @@ h1 {
   color: #ffffff;
 }
 
-.carousel {
-  margin: 30px auto 60px;
-  padding: 0 80px;
-}
-.carousel .carousel-item {
-  text-align: center;
-  overflow: hidden;
-}
-.carousel .carousel-item h4 {
-  font-family: "Varela Round", sans-serif;
-}
-.carousel .carousel-item img {
-  max-width: 100%;
-  display: inline-block;
-}
-.carousel .carousel-item .btn {
-  border-radius: 0;
-  font-size: 12px;
-  text-transform: uppercase;
-  font-weight: bold;
-  border: none;
-  background: #a177ff;
-  padding: 6px 15px;
-  margin-top: 5px;
-}
-.carousel .carousel-item .btn:hover {
-  background: #8c5bff;
-}
-.carousel .carousel-item .btn i {
-  font-size: 14px;
-  font-weight: bold;
-  margin-left: 5px;
-}
-.carousel .thumb-wrapper {
-  margin: 5px;
-  text-align: left;
-  background: #fff;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
-}
-
 .no-padd {
   padding-left: 0;
   padding-right: 0;
@@ -110,33 +108,16 @@ h1 {
   position: relative;
   width: 100%;
 }
-
-.div-dyn {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  flex-wrap: nowrap;
-}
-
-h2 {
-  margin-bottom: 20px;
-}
-
 h5 {
   margin-bottom: 30px;
 }
 
 .set {
   padding: 25px;
-  width: 40%;
+  margin: 40px;
+  /* width: 40%; */
   min-width: 300px;
-  box-shadow: 
-    0 3px 10px 0 #eaeaea,
-    0 9px 15px 0 #eaeaea;
+  box-shadow: 0 3px 10px 0 #eaeaea, 0 9px 15px 0 #eaeaea;
   text-align: left;
   border-radius: 10px;
 }
@@ -152,6 +133,10 @@ h5 {
 
 .indicator img {
   margin-right: 10px;
+}
+
+.btn {
+  font-size: 20px;
 }
 
 .btn,
@@ -177,20 +162,5 @@ h5 {
 @media (min-width: 860px) {
   .carousel .carousel-item img {
     height: 75vh;
-  }
-}
-
-@media (max-width: 680px) {
-  .div-dyn {
-    flex-direction: column-reverse;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .set {
-    width: 80%;
-  }
-
-  .set:first-child {
-    margin-top: 20px;
   }
 }
