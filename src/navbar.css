@@ -67,6 +67,8 @@ button {
 .menu {
   position: relative;
   background: var(--bg);
+  animation: forwards;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .menu-bar {
