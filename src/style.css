@@ -81,7 +81,7 @@ div .description {
 .card-carousal {
   gap: 3rem;
   width: 100%;
-  overflow: scroll;
+  overflow-x: scroll;
   height: max-content;
   padding: 1rem;
 }
