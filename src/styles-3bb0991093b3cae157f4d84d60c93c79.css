@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #0d6efd;
+}
+
+body, html {
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+
+body > div {
+  padding: 10px;
+}
+
+.underline {
+  display: inline-block;
+  line-height: 1;
+  border-bottom: 4px solid orangered;
+  padding-bottom: 3px;
+}
+
+h2 {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 500;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+h2[class="underline"] {
+  margin-bottom: 45px;
+}
+#short {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+}
+
+#short::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url(assets/cnc-2.0.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: brightness(30%);
+  z-index: -1;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+div {
+  text-align: center;
+}
+/* .showcase {
+  width: 90%;
+  overflow: scroll;
+}
+
+.card {
+  margin: 1%;
+}
+
+.card-body {
+  padding: 30px;
+  min-height: 400px;
+  min-width: 400px;
+}
+
+.card-title {
+  margin-top: 20px;
+}
+.div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+} */
+
+
+.btn {
+  font-size: 20px;
+  background-color: transparent;
+}
+
+.btn,
+.btn:hover,
+.btn:focus {
+  color: #fff;
+}
+
+.no-decor {
+  text-decoration: none;
+  color: white;
+}
+
+.no-decor:hover {
+  text-decoration: none;
+  color: white;
+}
+
+#ourAddress a {
+  text-decoration: none;
+}

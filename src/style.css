@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #0d6efd;
+}
+
+body,
+html {
+  font-family: sans-serif;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body > div {
+  padding: 3rem;
+  min-height: 80vh;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+header,
+nav {
+  z-index: 100;
+}
+
+#hero {
+  height: 90vh;
+}
+
+#hero img {
+  width: 50%;
+}
+
+#hero button {
+  box-sizing: content-box;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1.3rem;
+  background-color: var(--primary);
+  border-radius: 1rem;
+  color: #fff;
+}
+
+#hero > div > p {
+  font-weight: 100;
+  color: #ddd;
+}
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.3rem;
+  line-height: 1;
+  margin-bottom: 1.2rem;
+}
+div .description {
+  width: 45%;
+  padding: 1rem;
+}
+
+.underline {
+  width: max-content;
+  text-align: center;
+  margin: 1rem;
+  line-height: 1;
+  border-bottom: 4px solid orangered;
+  padding-bottom: 3px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-carousal {
+  gap: 3rem;
+  width: 100%;
+  overflow: scroll;
+  height: max-content;
+  padding: 1rem;
+}
+
+.card {
+  min-width: 500px;
+  width: auto;
+  padding: 2.1rem;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  text-align: center;
+}
+.card img {
+  width: 100%;
+  max-height: 400px;
+  margin-bottom: 1rem;
+}
+
+.contact {
+  width: 40%;
+  min-height: 50%;
+  padding: 2rem;
+}
+#contact {
+  padding: 5rem;
+}
+
+#contact img {
+  width: 40%;
+  padding: 2rem;
+}
+
+.info {
+  font-size: 1.2rem;
+  display: flex;
+  gap: 0.7rem;
+  margin-bottom: 10px;
+}
+.info a {
+  text-decoration: none;
+}
+.info svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.flair {
+  height: 10vh;
+  background-color: #34495e;
+  color: white;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  #hero {
+    text-align: center;
+    position: relative;
+    justify-content: middle;
+    align-items: center;
+    color: white;
+  }
+  #hero img {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: auto;
+    filter: blur(1px) brightness(40%);
+  }
+  #hero div {
+    width: 100%;
+  }
+  .card {
+    min-width: 80vw;
+  }
+  #contact div {
+    justify-content: center;
+  }
+  #contact img {
+    display: none;
+  }
+  .contact {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    min-width: 75vw;
+  }
+  #contact {
+    padding: 1rem;
+  }
+}

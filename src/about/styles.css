@@ -1,0 +1,72 @@
+body,
+html {
+  width: 100%;
+}
+
+.parent-div {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+section {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.4em;
+}
+
+.parent-section {
+  padding: 1rem 7%;
+  margin-top: 40px;
+}
+
+h3,
+h4 {
+  font-family: "Varela Round", sans-serif;
+}
+h1 {
+  display: inline-block;
+  line-height: 1;
+  border-bottom: 4px solid orangered;
+  padding-bottom: 3px;
+}
+
+h3 {
+  margin: 0 0 30px 0;
+}
+
+h4 {
+  margin: 0 0 15px 0;
+}
+
+ol {
+  margin-top: 20px;
+}
+
+.subsection {
+  margin: 30px 20px;
+}
+
+.showcase {
+  background-color: palegoldenrod;
+}
+
+@media (max-width: 900px) {
+  .parent-div {
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 700px) {
+  .parent-div {
+    margin-top: 7%;
+  }
+  .main {
+    padding: 10px 8%;
+  }
+}
+
+@media (max-width: 400px) {
+  .parent-div {
+    margin-top: 9%;
+  }
+}
