@@ -47,22 +47,30 @@ nav {
   width: 100%;
 }
 
-#hero button {
+.action-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   box-sizing: content-box;
-  margin: 1rem;
   padding: .5rem;
   font-size: 1rem;
   border: 2px solid var(--primary);
   border-radius: 5px;
 }
+a {
+  text-decoration: none;
 
-#hero button:hover {
+}
+.action-btn:hover {
+  transition: all .25s;
   background-color: var(--primary);
 }
 
 #hero > div > p {
   font-weight: 300;
   color: #000;
+  margin: 1rem;
 }
 h1 {
   font-family: "Open Sans", sans-serif;
@@ -74,6 +82,7 @@ h1 {
 div .description {
   width: 45%;
   padding: 1rem;
+
 }
 
 .underline {
@@ -90,6 +99,10 @@ div .description {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.sec-description {
+  margin: 1rem 0;
 }
 
 .card-carousal {
