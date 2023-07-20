@@ -67,7 +67,16 @@ button {
   max-height: 400px;
   margin-bottom: 1rem;
 }
-
+.flair {
+  height: 8vh;
+  max-height: 100px;
+  background-color: #34495e;
+  color: #ddd;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media (min-width: 600px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
