@@ -13,6 +13,7 @@ html {
   font-family: sans-serif;
   height: 100%;
   overflow-x: hidden;
+  text-align: center;
 }
 
 body > div {
@@ -26,13 +27,13 @@ body > div {
   justify-content: space-between;
 }
 
+img, button {
+  user-select: none;
+}
+
 header,
 nav {
   z-index: 100;
-}
-
-#hero {
-  /* align-items: flex-start; */
 }
 
 #hero .side-image {
@@ -42,10 +43,8 @@ nav {
   overflow: hidden;
 }
 
-#hero > div img {
+.side-image img {
   width: 100%;
-  /* transform: translateX(-10%);
-  filter: brightness(30%); */
 }
 
 #hero button {
@@ -62,8 +61,8 @@ nav {
 }
 
 #hero > div > p {
-  font-weight: 100;
-  color: #555;
+  font-weight: 300;
+  color: #000;
 }
 h1 {
   font-family: "Open Sans", sans-serif;
@@ -160,6 +159,7 @@ div .description {
 
 .flair {
   height: 8vh;
+  max-height: 100px;
   background-color: #34495e;
   color: #ddd;
   font-size: 1rem;
