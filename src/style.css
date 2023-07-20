@@ -244,3 +244,9 @@ div .description {
     font-size: 1rem;
   }
 }
+
+@media (min-width: 1000px) {
+  .underline {
+    font-size: 2rem;
+  }
+}
