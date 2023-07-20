@@ -17,7 +17,8 @@ html {
 
 body > div {
   padding: 3rem;
-  min-height: 80vh;
+  min-height: 20vh;
+  padding-bottom: 0;
 }
 
 .flex {
@@ -31,32 +32,45 @@ nav {
 }
 
 #hero {
-  height: 90vh;
+  /* align-items: flex-start; */
 }
 
-#hero img {
+#hero .side-image {
   width: 50%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+#hero > div img {
+  width: 100%;
+  /* transform: translateX(-10%);
+  filter: brightness(30%); */
 }
 
 #hero button {
   box-sizing: content-box;
   margin: 1rem;
-  padding: 1rem;
-  font-size: 1.3rem;
+  padding: .5rem;
+  font-size: 1rem;
+  border: 2px solid var(--primary);
+  border-radius: 5px;
+}
+
+#hero button:hover {
   background-color: var(--primary);
-  border-radius: 1rem;
-  color: #fff;
 }
 
 #hero > div > p {
   font-weight: 100;
-  color: #ddd;
+  color: #555;
 }
 h1 {
   font-family: "Open Sans", sans-serif;
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   line-height: 1;
   margin-bottom: 1.2rem;
+  font-weight: 600;
 }
 div .description {
   width: 45%;
@@ -66,6 +80,7 @@ div .description {
 .underline {
   width: max-content;
   text-align: center;
+  font-size: 1.7rem;
   margin: 1rem;
   line-height: 1;
   border-bottom: 4px solid orangered;
@@ -102,6 +117,7 @@ div .description {
 
 #contact {
   padding: 5rem;
+  min-height: max-content;
   text-align: center;
 }
 .contact-ways {
@@ -118,26 +134,35 @@ div .description {
   border-radius: 10px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-.info * {
-  margin: 0.5rem;
+.info h3,
+.info div {
+  margin-bottom: .5rem;
 }
+
 .info h3 {
   text-align: center;
 }
 
 .info a {
   text-decoration: none;
+  margin-bottom: 2rem;
 }
+
+.info p {
+  font-size: 1rem;
+}
+
 .info svg {
   width: 70px;
   height: 70px;
+  margin-bottom: -0.5rem;
 }
 
 .flair {
-  height: 10vh;
+  height: 8vh;
   background-color: #34495e;
-  color: white;
-  font-size: 1.2rem;
+  color: #ddd;
+  font-size: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -156,23 +181,30 @@ div .description {
     font-size: 2.5rem;
   }
   #hero {
+    padding: 1rem;
     text-align: center;
-    position: relative;
-    justify-content: middle;
+    justify-content: flex-start;
     align-items: center;
-    color: white;
-  }
-  #hero img {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: auto;
-    filter: blur(1px) brightness(40%);
+    flex-direction: column;
+    min-height: 50vh;
+    height: max-content;
+    /* color: white; */
   }
   #hero div {
     width: 100%;
+  }
+  #hero .side-image {
+    /* padding: 1rem; */
+    width: 70%;
+  }
+
+  #hero img {
+    height: min-content;
+    width: 100%;
+    /* filter: brightness(40%); */
+  }
+  #hero .description {
+    padding-top: 0;
   }
   .card {
     min-width: 80vw;
@@ -183,10 +215,19 @@ div .description {
 }
 
 @media (max-width: 600px) {
+  body > div {
+    padding: 2rem;
+  }
+  #hero h1 {
+    font-size: 2rem;
+  }
   .card {
     min-width: 75vw;
   }
   #contact {
     padding: 1rem;
+  }
+  .info a, .info p {
+    font-size: 1rem;
   }
 }

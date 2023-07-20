@@ -6,11 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nano Tech Dynamics</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet" />
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="navbar.css" />
-  <script defer src="navbar.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./navbar.css" />
   <link rel="stylesheet" href="./style.css" />
+  <script defer src="navbar.js"></script>
 </head>
 
 <body>
@@ -31,14 +30,24 @@
     </div>
 
     <button id="hamburger" aria-label="hamburger" aria-haspopup="true" aria-expanded="false">
-      <i class="bx bx-menu" aria-hidden="true"></i>
+      <svg id="open" class="show" viewBox="0 0 24 24" fill="#000000">
+        <path d="M0 0h24v24H0z" fill="none" />
+        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+      </svg>
+      <svg id="close" class="" viewBox="0 0 24 24" fill="#000000">
+        <path d="M0 0h24v24H0z" fill="none" />
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+      </svg>
     </button>
   </header>
   <div id="hero" class="flex">
-    <img src="./assets/cnc-.25.jpg">
+    <div class="side-image">
+      <img src="./assets/thumb.jpg">
+    </div>
     <div class="description">
       <h1>Crafting with finest precision</h1>
-      <p></p>
+      <p>We manufacture high quality components</p>
       <a href="#contact">
         <button>
           Contact Us
@@ -53,11 +62,11 @@
     <div class="flex card-carousal">
       <div class="card">
         <img src="./assets/Cosmos_cvm_800.png" alt="" class="card-img" />
-        <h3 class="card-title">4-axis VMC - COSMOS CVM-800</h3>
+        <h3 class="card-title">4-axis VMC - Cosmos CVM-800</h3>
       </div>
       <div class="card">
         <img src="./assets/jyothi-dx200.png" alt="" class="card-img" />
-        <h3 class="card-title">CNC Lathe - Jyoti DX 200 - 7A with Siemens 828D</h3>
+        <h3 class="card-title">CNC Lathe - Jyoti DX 200-7A with Siemens 828D</h3>
       </div>
       <div class="card">
         <img src="./assets/accurate_cmm.jpg" alt="" class="card-img" />
@@ -65,11 +74,11 @@
       </div>
       <div class="card">
         <img src="./assets/Hass-TL-1.jpg" alt="" class="card-img" />
-        <h3 class="card-title">CNC Lathe -HASS TL-1 tool room lathe</h3>
+        <h3 class="card-title">CNC Lathe - HASS TL-1</h3>
       </div>
       <div class="card">
         <img src="./assets/bandsaw.jpg" alt="" class="card-img" />
-        <h3 class="card-title">Band saw cutting Machine</h3>
+        <h3 class="card-title">Bandsaw cutting Machine</h3>
       </div>
     </div>
   </div>
@@ -111,34 +120,49 @@
     <div class="contact-ways flex">
       <div class="info">
         <h3>Call Us</h3>
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-          <path d="M0 0h24v24H0z" fill="none" />
-          <path
-            d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" />
-        </svg><br>
-        <a href="tel:+919930280557">+919930280557</a>
-        <p>Contact our manager and get quick response</p>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" />
+          </svg>
+        </div>
+        <div><a href="tel:+919930280557">+919930280557</a></div>
+        <div>
+          <p>Contact our manager and get quick response</p>
+        </div>
       </div>
       <div class="info">
         <h3>Mail Us</h3>
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-          <path d="M0 0h24v24H0z" fill="none" />
-          <path
-            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
-        </svg><br>
-        <a href="mailto:dynamicsnanotech@gmail.com">dynamicsnanotech@gmail.com</a>
-        <p>Or send a mail about your queiry. We'll get back soon.</p>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+          </svg>
+        </div>
+        <div><a href="mailto:dynamicsnanotech@gmail.com">dynamicsnanotech@gmail.com</a></div>
+        <div>
+          <p>Or send a mail about your queiry. We'll get back soon.</p>
+        </div>
       </div>
       <div class="info">
         <h3>Visit our company</h3>
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-          <path d="M0 0h24v24H0z" fill="none" />
-          <path
-            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-        </svg><br>
-        <a href="https://goo.gl/maps/SqkKK7pkH2LtWjHE7">Find us on google map</a>
-          <p>Our address: Plot No - KDP 2, <br>KINFRA Defence Park Ottapalam, Palakkad Ponnani Rd. Lakkidi Koottopatha, Kerala -
-          679103</p>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+          </svg>
+        </div>
+        <div>
+          <a href="https://goo.gl/maps/SqkKK7pkH2LtWjHE7">Find us on google map</a>
+        </div>
+        <div>
+          <p>Our address: Plot No - KDP 2, KINFRA Defence Park Ottapalam, Palakkad Ponnani Rd. Lakkidi Koottopatha,
+            Kerala -
+            679103</p>
+        </div>
       </div>
     </div>
   </div>
