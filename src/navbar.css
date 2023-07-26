@@ -111,7 +111,7 @@ button {
     min-height: 100vh;
     width: 100vw;
   }
-  header svg {
+  header button svg {
     display: none;
   }
 
