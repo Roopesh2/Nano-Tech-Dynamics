@@ -1,251 +1,251 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 :root {
-  --primary: #0d6efd;
+	--primary: #0d6efd;
 }
 
 body,
 html {
-  font-family: sans-serif;
-  height: 100%;
-  overflow-x: hidden;
-  text-align: center;
+	font-family: sans-serif;
+	height: 100%;
+	overflow-x: hidden;
+	text-align: center;
 }
 
 body > div {
-  padding: 3rem;
-  min-height: 20vh;
-  padding-bottom: 0;
+	padding: 3rem;
+	min-height: 20vh;
+	padding-bottom: 0;
 }
 
 .flex {
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
-img, button {
-  user-select: none;
+img,
+button {
+	user-select: none;
 }
 
 header,
 nav {
-  z-index: 100;
+	z-index: 100;
 }
 
 #hero .side-image {
-  width: 50%;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
+	width: 50%;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
 }
 
 .side-image img {
-  width: 100%;
+	width: 100%;
 }
 
 .action-btn {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  box-sizing: content-box;
-  padding: .5rem;
-  font-size: 1rem;
-  border: 2px solid var(--primary);
-  border-radius: 5px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	box-sizing: content-box;
+	padding: 0.5rem;
+	font-size: 1rem;
+	border: 2px solid var(--primary);
+	border-radius: 5px;
 }
 a {
-  text-decoration: none;
-
+	text-decoration: none;
 }
 .action-btn:hover {
-  transition: all .25s;
-  background-color: var(--primary);
+	transition: all 0.25s;
+	background-color: var(--primary);
 }
 
 #hero > div > p {
-  font-weight: 300;
-  color: #000;
-  margin: 1rem;
+	font-weight: 300;
+	color: #000;
+	margin: 1rem;
 }
 h1 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 2.5rem;
-  line-height: 1;
-  margin-bottom: 1.2rem;
-  font-weight: 600;
+	font-family: "Open Sans", sans-serif;
+	font-size: 2.5rem;
+	line-height: 1;
+	margin-bottom: 1.2rem;
+	font-weight: 600;
 }
 div .description {
-  width: 45%;
-  padding: 1rem;
-
+	width: 45%;
+	padding: 1rem;
 }
 
 .underline {
-  width: max-content;
-  text-align: center;
-  font-size: 1.7rem;
-  margin: 1rem;
-  line-height: 1;
-  border-bottom: 4px solid orangered;
-  padding-bottom: 3px;
+	width: max-content;
+	text-align: center;
+	font-size: 1.7rem;
+	margin: 1rem;
+	line-height: 1;
+	border-bottom: 4px solid orangered;
+	padding-bottom: 3px;
 }
 
 .section-heading {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .sec-description {
-  margin: 1rem 0;
+	margin: 1rem 0;
 }
 
 .card-carousal {
-  gap: 3rem;
-  width: 100%;
-  overflow-x: scroll;
-  height: max-content;
-  padding: 1rem;
+	gap: 3rem;
+	width: 100%;
+	overflow-x: scroll;
+	height: max-content;
+	padding: 1rem;
 }
 
 .card {
-  min-width: 500px;
-  width: auto;
-  padding: 2.1rem;
-  border-radius: 10px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  text-align: center;
+	min-width: 500px;
+	width: auto;
+	padding: 2.1rem;
+	border-radius: 10px;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	text-align: center;
 }
 .card img {
-  width: 100%;
-  margin-bottom: 1rem;
+	width: 100%;
+	margin-bottom: 1rem;
 }
 
 #contact {
-  padding: 5rem;
-  min-height: max-content;
-  text-align: center;
+	padding: 5rem;
+	min-height: max-content;
+	text-align: center;
 }
 .contact-ways {
-  padding: 2rem;
-  gap: 1rem;
-  margin: auto;
+	padding: 2rem;
+	gap: 1rem;
+	margin: auto;
 }
 
 .info {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  width: 30%;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	font-size: 1.2rem;
+	margin-bottom: 10px;
+	width: 30%;
+	padding: 1rem;
+	border-radius: 10px;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .info h3,
 .info div {
-  margin-bottom: .5rem;
+	margin-bottom: 0.5rem;
 }
 
 .info h3 {
-  text-align: center;
+	text-align: center;
 }
 
 .info a {
-  text-decoration: none;
-  margin-bottom: 2rem;
+	text-decoration: none;
+	margin-bottom: 2rem;
 }
 
 .info p {
-  font-size: 1rem;
+	font-size: 1rem;
 }
 
 .info svg {
-  width: 70px;
-  height: 70px;
-  margin-bottom: -0.5rem;
+	width: 70px;
+	height: 70px;
+	margin-bottom: -0.5rem;
 }
 
 .flair {
-  height: 8vh;
-  max-height: 100px;
-  background-color: #34495e;
-  color: #ddd;
-  font-size: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	height: 8vh;
+	max-height: 100px;
+	background-color: #34495e;
+	color: #ddd;
+	font-size: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 @media (max-width: 1300px) {
-  .contact-ways {
-    flex-direction: column;
-  }
-  .info {
-    width: 70%;
-  }
+	.contact-ways {
+		flex-direction: column;
+	}
+	.info {
+		width: 70%;
+	}
 }
 @media (max-width: 800px) {
-  h1 {
-    font-size: 2.5rem;
-  }
-  #hero {
-    padding: 1rem;
-    text-align: center;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    min-height: 50vh;
-    height: max-content;
-    /* color: white; */
-  }
-  #hero div {
-    width: 100%;
-  }
-  #hero .side-image {
-    /* padding: 1rem; */
-    width: 70%;
-  }
+	h1 {
+		font-size: 2.5rem;
+	}
+	#hero {
+		padding: 1rem;
+		text-align: center;
+		justify-content: flex-start;
+		align-items: center;
+		flex-direction: column;
+		min-height: 50vh;
+		height: max-content;
+		/* color: white; */
+	}
+	#hero div {
+		width: 100%;
+	}
+	#hero .side-image {
+		/* padding: 1rem; */
+		width: 70%;
+	}
 
-  #hero img {
-    height: min-content;
-    width: 100%;
-    /* filter: brightness(40%); */
-  }
-  #hero .description {
-    padding-top: 0;
-  }
-  .card {
-    min-width: 80vw;
-  }
-  .info {
-    width: 90%;
-  }
+	#hero img {
+		height: min-content;
+		width: 100%;
+		/* filter: brightness(40%); */
+	}
+	#hero .description {
+		padding-top: 0;
+	}
+	.card {
+		min-width: 80vw;
+	}
+	.info {
+		width: 90%;
+	}
 }
 
 @media (max-width: 600px) {
-  body > div {
-    padding: 2rem;
-  }
-  #hero h1 {
-    font-size: 2rem;
-  }
-  .card {
-    min-width: 75vw;
-  }
-  #contact {
-    padding: 1rem;
-  }
-  .info a, .info p {
-    font-size: 1rem;
-  }
+	body > div {
+		padding: 2rem;
+	}
+	#hero h1 {
+		font-size: 2rem;
+	}
+	.card {
+		min-width: 75vw;
+	}
+	#contact {
+		padding: 1rem;
+	}
+	.info a,
+	.info p {
+		font-size: 1rem;
+	}
 }
 
 @media (min-width: 1000px) {
-  .underline {
-    font-size: 2rem;
-  }
+	.underline {
+		font-size: 2rem;
+	}
 }

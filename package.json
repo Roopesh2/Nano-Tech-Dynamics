@@ -1,12 +1,10 @@
 {
-  "name": "nano-tech-dynamics-landing-site",
-  "version": "1.0.0",
-  "description": "",
-  "keywords": [],
-  "scripts": {
-    
-  },
-  "author": "Roopesh",
-  "private": true,
-  "license": "ISC"
+	"name": "nano-tech-dynamics-landing-site",
+	"version": "1.0.0",
+	"description": "",
+	"keywords": [],
+	"scripts": {},
+	"author": "Roopesh",
+	"private": true,
+	"license": "ISC"
 }

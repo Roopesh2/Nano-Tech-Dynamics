@@ -4,9 +4,9 @@ const openIcon = document.getElementById("open");
 const navMenu = document.querySelector(".menu");
 
 function toggleHamburger() {
-  navMenu.classList.toggle("show");
-  closeIcon.classList.toggle("show");
-  openIcon.classList.toggle("show");
+	navMenu.classList.toggle("show");
+	closeIcon.classList.toggle("show");
+	openIcon.classList.toggle("show");
 }
 
 // toggle hamburger menu
