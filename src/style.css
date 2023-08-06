@@ -59,9 +59,18 @@ nav {
 	border: 2px solid var(--primary);
 	border-radius: 5px;
 }
+
 a {
 	text-decoration: none;
 }
+
+.logo {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
 .action-btn:hover {
 	transition: all 0.25s;
 	background-color: var(--primary);
